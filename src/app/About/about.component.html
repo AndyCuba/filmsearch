@@ -1,0 +1,10 @@
+<div *ngIf="movie;else notFound" class="aboutComponent">
+    <div class="aboutComponent_info">
+        <h2>{{movie.title}}</h2>
+        <img src={{movie.image}} alt="movie image">
+    </div>
+    <p class="aboutComponent_description">Description: {{movie.description}}</p>
+</div>
+<ng-template #notFound>
+    <p>Ничего не найдено, используйте поиск.</p>
+</ng-template>

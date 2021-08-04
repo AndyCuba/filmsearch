@@ -1,0 +1,26 @@
+.homeComponent {
+    padding: 1rem;
+}
+
+.homeComponent_form > input, .homeComponent_form > button {
+    font-size: 1.5rem;
+}
+
+.homeComponent_form > button {
+    cursor: pointer;
+}
+
+.homeComponent_list {  
+    list-style-type: none;
+}
+
+.homeComponent_list > li > a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.homeComponent_list > li > a:hover {
+    color: black;
+    text-decoration: underline;
+}

@@ -1,0 +1,17 @@
+<div class="homeComponent">
+    <form class="homeComponent_form">
+        <input class="form-control" name="searchfield" [(ngModel)]="searchfield"/>
+        <button (click)="getFilms()">Поиск</button>
+    </form>
+    <div *ngIf="data;else notFound">
+        <ul class="homeComponent_list">
+            <li *ngFor="let film of data">
+                <a routerLinkActive="active" routerLink="/about/{{film.id}}">{{film.title}}</a>
+            </li>
+        </ul>
+    </div>
+    <ng-template #notFound>
+        <p>Ничего не найдено, используйте поиск.</p>
+    </ng-template>  
+</div>
+
